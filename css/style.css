@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
+/*----MOBILE LAYOUT----*/
+
 body {
     font-family: 'Roboto', sans-serif;
-    color:#365902
+    color:#365902;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                         "hero"
+                         "invite"
+                         "thumbnails"
+                         "footer";
 }
 
 h1, h2 {
@@ -11,5 +20,42 @@ h1, h2 {
     font-weight: bold;
 }
 
-/*----MOBILE LAYOUT----*/
+h1 {
+    color: #ffffff;
+}
 
+#logo,
+#navbar {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+#header-banner {
+    grid-area: header;
+    height: 100%;
+    background-color: #365902;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hero {
+    grid-area: hero;
+}
+
+#invite {
+    grid-area: invite;
+}
+
+#links {
+    grid-area: thumbnails;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/*----DESKTOP LAYOUT----*/
