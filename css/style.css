@@ -36,7 +36,7 @@ img {
     border-radius: 10px;
     width: 103px;
     height: 30px;
-    border: 2px solid #365902;
+    border: 1px solid #000000;
     background-color: #ffffff;
     font-size: 16px;
     text-align: center;
@@ -63,9 +63,12 @@ header {
     background-color: #365902;
     display: flex;
     justify-content: space-around;
-    font-size: 1.6em;
     align-items: center;
     color: #ffffff;
+}
+
+h1 {
+    font-size: 1.6em;
 }
 
 #hero {
@@ -85,10 +88,13 @@ header {
 #invite {
     grid-area: invite;
     color: #c60639;
-    font-size: 1.4em;
     text-align: center;
     margin: 8% 0% 0% 0%;
     line-height: 1.3;
+}
+
+#invite h2 {
+    font-size: 1.4em;
 }
 
 #links {
@@ -176,8 +182,8 @@ footer {
 }
 
 @media screen and (min-width: 550px) {
-    #header-banner {
-        font-size: 1.8em;
+    h1 {
+        font-size: 2em;
     }
 
     #invite {
@@ -198,8 +204,57 @@ footer {
 /*----TABLET LAYOUT----*/
 
 @media screen and (min-width: 700px) {
-    
+
+#header-btn {
+    display: block;
+    align-self: end;
+    margin-right: 2%;
+    margin-bottom: 1.5%;
 }
 
+.hamburger {
+    display: none;
+}
 
-/*----DESKTOP LAYOUT----*/
+#navbar {
+    display: inline-block;
+    height: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+ul a {
+    text-decoration: none;
+    color: #365902;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+#header-banner {
+    height: 85%;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+}
+
+#hero {
+    margin-top: 0%;
+}
+
+}
