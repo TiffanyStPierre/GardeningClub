@@ -36,12 +36,16 @@ h1, h2 {
     border-radius: 10px;
     width: 103px;
     height: 30px;
-    border: 1px solid #000000;
+    border: 2px solid #365902;
     background-color: #ffffff;
     font-size: 16px;
     text-align: center;
     color: #365902;
     font-weight: bold;
+}
+
+#header-btn {
+    border: 1.5px solid #000000;
 }
 
 #join-btn {
@@ -97,22 +101,35 @@ h1 {
     font-size: 1.4em;
 }
 
-#links {
+#cards {
     grid-area: links;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 .thumbnail {
     display: flex;
     flex-direction: column;
+    width: 90%;
     margin: 6% 7%;
     align-items: center;
-    justify-content: center;
 }
 
-h3 {
+.thumbnail h3 {
     font-weight: bold;
     margin-bottom: 3%;
     font-size: 1.2em;
+    flex-grow: 1;
 }
 
 /* Hamburger Menu Icon */
@@ -172,6 +189,10 @@ footer {
     grid-area: footer;
     margin: 3% 1.5% 0% 1.5%;
     font-size: 0.8em;
+}
+
+footer p {
+    margin-bottom: 4%;
 }
 
 /*----VARIOUS SIZES MEDIA QUERY----*/
@@ -250,9 +271,33 @@ h1 {
     font-size: 2.2em;
 }
 
-#links {
+#cards {
     display: flex;
     flex-direction: row;
+    margin-top: 6%;
+}
+
+.card-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+.thumbnail {
+    margin: 0% 2%;
+}
+
+.thumbnail img {
+    flex-grow: 1;
+}
+
+.thumbnail h3 {
+    text-align: center;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 #hero {
@@ -277,11 +322,14 @@ h2 {
     max-height: 100%;
 }
 
-h3 {
-    text-align: center;
-    font-size: 1.1em;
-    margin: 5% 0% 11% 0%;
+footer {
+    margin: 0% 1.5%;
 }
+
+.divider {
+    margin: 6% 0% 4% 0%;
+}
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -315,8 +363,8 @@ h3 {
         justify-content: flex-start;
     }
 
-    h3 {
-        font-size: 1.7em;
+    .thumbnail h3 {
+        font-size: 1.4em;
     }
 
     #invite {
@@ -324,7 +372,17 @@ h3 {
     }
 
     .divider {
-        margin: 2% 0% 4% 0%;
+        margin: 4% 0%;
+    }
+
+    #cards {
+        margin-top: 3%;
+    }
+
+    #join-btn {
+        width: 180px;
+        height: 65px;
+        font-size: 32px;
     }
 
 }
@@ -337,6 +395,36 @@ h3 {
 
     #invite {
         font-size: 2.5em;
+    }
+
+    #hero {
+        height: 500px;
+    }
+
+    #header-banner {
+        height: 75%;
+    }
+
+    #navbar {
+        height: 25%;
+    }
+
+    #join-btn {
+        width: 225px;
+        height: 85px;
+        font-size: 40px;
+    }
+
+    .thumbnail img {
+        max-width: 70%;
+    }
+
+    .thumbnail h3 {
+        font-size: 1.7em;
+    }
+
+    footer p {
+        margin-bottom: 2%;
     }
 
 }
