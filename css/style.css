@@ -248,6 +248,10 @@ footer p {
     height: 45px;
 }
 
+nav {
+    height: 100%;
+}
+
 ul {
     display: flex;
     flex-direction: row;
