@@ -222,6 +222,10 @@ footer p {
         height: 80px;
         margin: 3% 0%;
     }
+
+    .thumbnail img {
+        width: 85%;
+    }
 }
 
 /*----TABLET LAYOUT----*/
@@ -256,6 +260,11 @@ ul a {
     text-decoration: none;
     color: #365902;
     font-weight: bold;
+}
+
+li {
+    width: 156px;
+    text-align: center;
 }
 
 header {
@@ -349,8 +358,14 @@ footer {
         font-size: 1.4em;
     }
 
+    li {
+        width: 220px;
+        text-align: center;
+    }
+
     #invite {
         font-size: 1.9em;
+        margin-top: 5%;
     }
 
     footer {
@@ -367,10 +382,6 @@ footer {
         font-size: 1.4em;
     }
 
-    #invite {
-        margin-top: 5%;
-    }
-
     .divider {
         margin: 4% 0%;
     }
@@ -383,6 +394,12 @@ footer {
         width: 180px;
         height: 65px;
         font-size: 32px;
+    }
+
+    .btn {
+        width: 120px;
+        height: 35px;
+        font-size: 19px;
     }
 
 }
