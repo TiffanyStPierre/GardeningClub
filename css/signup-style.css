@@ -1,0 +1,122 @@
+#signup-img {
+    background-image: url("../images/easter-flowers-larger1.jpg");
+    background-color: #365902;
+    height: 190px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+h2 {
+    display: flex;
+    font-size: 1.4em;
+    text-align: center;
+    justify-content: center;
+    margin: 5% 0%;
+    align-items: center;
+}
+
+form {
+    margin: 0% 7%;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    align-items: center;
+}
+
+#form-btn {
+    border-radius: 10px;
+    width: 125px;
+    height: 34px;
+    border: 2px solid #365902;
+    background-color: #365902;
+    font-size: 19px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 4% 0%;
+}
+
+.formfield {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 1%;
+}
+
+.input {
+    border-radius: 5px;
+    height: 20px;
+    width: 300px;
+}
+
+footer {
+    margin-top: 40%;
+}
+
+@media screen and (min-width: 550px) {
+    h2 {
+        font-size: 1.6em;
+        margin-bottom: 8%;
+        margin-top: 6%;
+    }
+
+    .input {
+        height: 25px;
+        width: 325px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #signup-img {
+        margin-top: 0%;
+        height: 235px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    h2 {
+        font-size: 2.7em;
+        margin-bottom: 6%;
+        margin-top: 4%;
+    }
+
+    #signup-img {
+        height: 375px;
+    }
+
+    .input {
+        height: 25px;
+        width: 500px;
+    }
+
+    #form-btn {
+        width: 165px;
+        height: 42px;
+        font-size: 24px;
+    }
+
+    form {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    #signup-img {
+        height: 425px;
+    }
+}
