@@ -4,7 +4,7 @@
     height: 190px;
     background-size: cover;
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;

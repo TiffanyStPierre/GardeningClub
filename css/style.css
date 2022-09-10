@@ -31,7 +31,6 @@ h1, h2 {
     margin: 6% 0% 3% 0%;
     max-height: 250px;
 }
-
 .btn {
     border-radius: 10px;
     width: 103px;
@@ -44,6 +43,12 @@ h1, h2 {
     font-weight: bold;
 }
 
+.thumbnail a {
+    text-decoration: none;
+    padding-top: 2.5%;
+    height: 25px;
+}
+
 #header-btn {
     border: 1.5px solid #000000;
 }
@@ -53,8 +58,13 @@ h1, h2 {
     background-color: #c60639;
     color: #ffffff;
     width: 138px;
-    height: 45px;
+    height: 35px;
     font-size: 24px;
+}
+
+#hero a {
+    padding-top: 2%;
+    text-decoration: none;
 }
 
 header {
@@ -82,7 +92,7 @@ h1 {
     height: 265px;
     background-size: cover;
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,6 +292,12 @@ footer p {
     .mobile-menu {
         top: 114px;
     }
+
+    .thumbnail a {
+        text-decoration: none;
+        padding-top: 2%;
+        height: 25px;
+    }
 }
 
 /*----TABLET LAYOUT----*/
@@ -375,7 +391,7 @@ h1 {
 
 #join-btn {
     width: 165px;
-    height: 55px;
+    height: 45px;
     font-size: 28px;
 }
 
@@ -397,6 +413,12 @@ footer {
 
 .divider {
     margin: 6% 0% 4% 0%;
+}
+
+.thumbnail a {
+    text-decoration: none;
+    padding-top: 3.75%;
+    height: 25px;
 }
 
 }
@@ -452,7 +474,7 @@ footer {
 
     #join-btn {
         width: 180px;
-        height: 65px;
+        height: 55px;
         font-size: 32px;
     }
 
@@ -464,6 +486,12 @@ footer {
 
     #header-btn {
         margin-right: 0%;
+    }
+
+    .thumbnail a {
+        text-decoration: none;
+        padding-top: 2.25%;
+        height: 25px;
     }
 
 }
@@ -492,8 +520,12 @@ footer {
 
     #join-btn {
         width: 225px;
-        height: 85px;
+        height: 55px;
         font-size: 40px;
+    }
+
+    #hero a {
+        padding-top: 0.8%;
     }
 
     .thumbnail img {
@@ -510,6 +542,12 @@ footer {
 
     #header-btn {
         margin-bottom: 0.75%;
+    }
+
+    .thumbnail a {
+        text-decoration: none;
+        padding-top: 1.75%;
+        height: 25px;
     }
 
 }
